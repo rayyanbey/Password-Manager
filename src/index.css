@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components
+{
+    .mycontainer{
+        @apply container px-40 max-w-4xl py-16 mx-auto;
+    }
+}
+
+@layer components {
+    /* Custom scrollbar styles */
+    .custom-scrollbar::-webkit-scrollbar {
+      @apply w-2; /* Width of the scrollbar */
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-track {
+      @apply bg-white rounded-xl;
+       /* Background of the scrollbar track */
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      @apply bg-slate-800 rounded-lg; /* Color of the scrollbar thumb and rounded corners */
+    }
+    
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      @apply bg-slate-600; /* Color of the scrollbar thumb when hovered */
+    }
+  }
